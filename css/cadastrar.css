@@ -15,12 +15,15 @@ body{
 
 div.container{
     background-color: white;
-    border-radius: 30px;
-    padding: 65px;
+    border-radius: 25px;
+    padding: 76px;
 }
 
 div.container{
-    font-size: 25px;
+    background-color: white;
+    font-size: 20px;
+    height: 75vh;
+    width: 30%;
     color: rgb(0,0,0);
 }
 
@@ -30,22 +33,99 @@ div.container form{
     align-items: center;
 }
 
-div.container form input{
-    font-size: 18px;
-    padding: 9px;
-    color: rgb(0,0,0);
-    max-width: 185px;
-    margin: 0 7px;
-    border-radius: 5px;
-    border: 2px solid rgb(51, 51, 51);
-    outline: 0;
-    transition: border 0.4s;
+nav {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.brand {
+    width: 30%;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+nav ul a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+  
+nav ul a:hover {
+    color: #b3b3b3;
+}
+  
+nav ul button {
+    border: 2px solid white;
+    background: transparent;
+    padding: 10px 39px;
+    cursor: pointer;
+    margin-left: -5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+  
+nav ul button:hover {
+    transition: background, color 0.6s;
+    background: white;
+    color: #7B2525;
+}
+     
+div.container div.button input {
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(180, 180, 180);
+    padding: 10px 39px;
+    cursor: pointer;
+    margin-left: 92px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 8px;
+}
+  
+div.container div.button input:hover {
+    transition: background 0.3s, color 0.5s;
+    background: rgb(110, 110, 110);
+    color: white;
 }
 
-div.container form input:hover,
-div.container form input:focus,
-div.container form input:valid{
-    border: 2px solid  rgb(255, 0, 0);
+p strong {
+    color:white;
+}
+
+div.container a {
+    font-size: 75%;
+    margin: 0 101px;
+    color: blue;
+    cursor: pointer;
+}
+
+div.container a:hover {
+    transition: background, color 0.1s;
+    color: rgb(78, 0, 180);
+}
+
+.value input{
+    width: 19rem;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #000;
 }
 
 div.container form 
@@ -57,20 +137,6 @@ div.container div{
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-div.container div button{
-    padding: 10px 15px;
-    font-size: 16px;
-    color: white;
-    background-color: #1E90FF;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-div.container div span{
-    margin-left: 15px;
 }
 
 
@@ -91,3 +157,4 @@ div.container div span{
         font-size: 12px;
     }
 }
+

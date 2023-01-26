@@ -104,14 +104,14 @@ const escolherTamanhoPreco = (key) => {
 const mudarQuantidade = () => {
     // Ações nos botões + e - da janela modal
     seleciona('.pizzaInfo--qtmais').addEventListener('click', () => {
-        quantPizzas++
-        seleciona('.pizzaInfo--qt').innerHTML = quantPizzas
+        quantPizzas++;
+        seleciona('.pizzaInfo--qt').innerHTML = quantPizzas;
     })
 
     seleciona('.pizzaInfo--qtmenos').addEventListener('click', () => {
         if(quantPizzas > 1) {
-            quantPizzas--
-            seleciona('.pizzaInfo--qt').innerHTML = quantPizzas	
+            quantPizzas--;
+            seleciona('.pizzaInfo--qt').innerHTML = quantPizzas;
         }
     })
 }
@@ -124,10 +124,10 @@ const adicionarNoCarrinho = () => {
 
         // pegar dados da janela modal atual
     	// qual pizza? pegue o modalKey para usar pizzaJson[modalKey]
-    	console.log("Pizza " + modalKey)
+    	console.log("Carro " + modalKey)
     	// tamanho
 	    let size = seleciona('.pizzaInfo--size.selected').getAttribute('data-key')
-	    console.log("Tamanho " + size)
+	    console.log("Cor " + size)
 	    // quantidade
     	console.log("Quant. " + quantPizzas)
         // preco
